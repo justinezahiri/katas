@@ -47,3 +47,14 @@ function litres(time) {
   //on utilise Math.floor pour arrondir (renvoie le plus grand entier qui est inférieur ou égal à un nombre )
   return Math.floor(time * 0.5);
 }
+
+//Jenny's secret message (to greet Johnny a little special and others normaly)
+function greet(name) {
+  if (name === "Johnny")
+    return "Hello, my love!";
+  return "Hello, " + name + "!";
+}
+//or
+function greet(name) {
+  return "Hello, " + (name == "Johnny" ? "my love" : name) + "!";
+}

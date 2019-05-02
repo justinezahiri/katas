@@ -10,3 +10,13 @@ function find_average(array) {
   //si pas de passage dans la boucle, retourner 0. 
   return 0;
 }
+
+//Is n divisible by x and y?
+//Create a function isDivisible(n, x, y) that checks if a number n is divisible by two numbers x AND y. All inputs are positive, non-zero digits.
+function isDivisible(n, x, y) {
+  //j'utilise le modulo % pour vérifier si n est divisible par x et y 
+  if (n % x === 0 && n % y === 0) {
+    return true;
+  }
+  return false;
+}

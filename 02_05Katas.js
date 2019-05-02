@@ -33,3 +33,11 @@ function invert(array) {
 function invert(array) {
   return array.map(i => 0 - i);
 }
+
+//Reversed Strings
+function solution(str) {
+  //split() déconstruit la chaîne et fournit un tableau de sous-chaînes
+  //reverse() inverse un array
+  //join() crée et renvoie une nouvelle chaîne de caractères en concaténant tous les éléments d'un array
+  return str.split("").reverse().join("");
+}

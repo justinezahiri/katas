@@ -22,3 +22,9 @@ function accum(str) {
   }
   return result.join('-');
 }
+//or with spead operator
+function accum(s) {
+  return [...s].map((element, index) => {
+    return element.toUpperCase() + element.toLowerCase().repeat(index);
+  }).join('-');
+}

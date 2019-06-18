@@ -15,14 +15,18 @@ Return an array, where the first element is the count of positives numbers and t
 If the input array is empty or null, return an empty array.
 */
 function countPositivesSumNegatives(input) {
-  if (input === [] || null) {
+  if (input == null || input.length == 0)
     return [];
+
+  var positive = 0;
+  var negative = 0;
+
+  for (var i = 0, l = input.length; i < l; ++i) {
+    if (input[i] > 0)
+      ++positive;
+    else
+      negative += input[i];
   }
-  //iterate over input array
-  input.map
-  //create an array to push count of positive numbers
-  //create an array to push sum of negative numbers
-  //test if array element is a positive number 
-  //test if array element is a negative number
-  return ?;
+
+  return [positive, negative];
 }
